@@ -4,13 +4,15 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #F4B266;
 }
 
 nav ul{
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid black;
     font-size: 24px;
 }
 
@@ -36,14 +38,13 @@ nav ul{
   font-size: 16px;
 }
 
-.user-menu ul li{
+.user-menu ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
+    padding: 20px 10px;
+    background-color: #5C4033;
 }
 
 a {
