@@ -1,5 +1,4 @@
 header{
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,12 +16,10 @@ nav ul{
 }
 
 .logo{
-    border: 1px solid black;
     width: 70px;
 }
 
 .search-container{
-    border: 1px solid black;
     margin-right: 30%;
     padding: 5px;
 }
@@ -32,7 +29,7 @@ nav ul{
   background-size: 20px 20px;
   padding-left: 40px; /* espaço para não sobrepor o texto */
   height: 35px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
   width: 250px;
   font-size: 16px;
@@ -45,6 +42,7 @@ nav ul{
     text-decoration: none;
     padding: 20px 10px;
     background-color: #5C4033;
+    border-radius: 15px;
 }
 
 a {
