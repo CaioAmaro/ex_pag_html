@@ -1,0 +1,54 @@
+header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+.logo{
+    border: 1px solid black;
+    width: 70px;
+}
+
+.search-container{
+    border: 1px solid black;
+    margin-right: 30%;
+    padding: 5px;
+}
+
+.search-input{
+  background: url('lupa-search.svg') no-repeat 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px; /* espaço para não sobrepor o texto */
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.user-menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* opcional: mantém a cor do texto onde está */
+}
+
+
