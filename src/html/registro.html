@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crie sua Conta</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/header.css">
 </head>
 <body>
+
+    <div id="header-placeholder"></div>
    <main>
-    <form class="Formulario" action="#" method="post">
+    <form class="Formulario"action="/src/html/index.html" method="get">
         <h2>Crie sua conta</h2>
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" required>
@@ -21,9 +25,16 @@
         <label for="confirmar">Confirmar Senha</label>
         <input type="password" id="confirmar" required>
 
-        <button type="submit">Cadastrar</button>
+
+        <a href="/src/html/index.html">
+            <button type="submit" >Cadastrar</button>
+        </a>
+        
     </form>
    </main> 
+   <div id="footer-placeholder"></div>
+    <script src="/src/js/load-header.js"></script>
+    <script src="/src/js/load-footer.js"></script>
     
 </body>
 </html>
