@@ -25,7 +25,7 @@ nav ul{
 }
 
 .search-input{
-  background: url('/src/img/lupa-search.svg') no-repeat 10px center;
+  background: url('/img/lupa-search.svg') no-repeat 10px center;
   background-size: 20px 20px;
   padding-left: 40px; /* espaço para não sobrepor o texto */
   height: 35px;
