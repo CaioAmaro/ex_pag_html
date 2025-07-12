@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registro - Sabores Quarteto</title>
+    <link rel="stylesheet" href="/src/css/registro.css">
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/header.css">
 </head>
@@ -11,26 +12,41 @@
 
     <div id="header-placeholder"></div>
    <main>
-    <form class="Formulario"action="/src/html/index.html" method="get">
-        <h2>Crie sua conta</h2>
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+    <div class="register-card">
+        <h2>Crie sua Conta</h2>
+        <p>É rápido e fácil para começar a comprar.</p>
+        <form action="/src/html/index.html" method="get">
+            <div class="input-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
 
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" required>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha forte" required>
+            </div>
 
-        <label for="confirmar">Confirmar Senha</label>
-        <input type="password" id="confirmar" required>
+            <div class="input-group">
+                <label for="confirmar">Confirmar Senha</label>
+                <input type="password" id="confirmar" name="confirmar_senha" placeholder="Confirme sua senha" required>
+            </div>
 
-
-        <a href="/src/html/index.html">
-            <button type="submit" >Cadastrar</button>
-        </a>
-        
-    </form>
+            <div class="input-group terms">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Eu li e aceito os <a href="#">Termos de Serviço</a>.</label>
+            </div>
+            
+            <button type="submit" class="register-button">Cadastrar</button>
+        </form>
+        <p class="login-link">
+            Já tem uma conta? <a href="login.html">Faça login</a>
+        </p>
+    </div>
    </main> 
    <div id="footer-placeholder"></div>
     <script src="/src/js/load-header.js"></script>

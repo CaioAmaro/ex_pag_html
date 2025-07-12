@@ -1,46 +1,40 @@
-/* ================================================ */
-/* CSS CORRIGIDO PARA CENTRALIZAÇÃO */
-/* ================================================ */
+/* Layout principal para garantir a centralização */
 body {
     display: flex;
     flex-direction: column;
-    min-height: vh;
-    /* Garante que o corpo ocupe 100% da altura da tela */
+    min-height: 50vh;
     font-family: sans-serif;
-    /* É uma boa prática definir uma fonte base */
     background-color: #f9f4ef;
 }
 
 main {
     flex-grow: 1;
-    /* Faz o <main> crescer e ocupar todo o espaço vago entre o header e o footer */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* Um padding simples é suficiente */
 }
 
-/* ================================================ */
-
-.login-card {
+/* Estilo do card de registro */
+.register-card {
     background-color: #ffffff;
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
+    /* Um pouco mais largo para acomodar os campos */
     text-align: center;
 }
 
-.login-card h2 {
+.register-card h2 {
     margin-bottom: 10px;
     color: #5C4033;
     font-size: 2em;
     font-weight: bold;
 }
 
-.login-card p {
+.register-card p {
     margin-bottom: 30px;
     color: #666;
 }
@@ -66,34 +60,25 @@ main {
     box-sizing: border-box;
 }
 
-.form-options {
+/* Estilo para a caixa de "Termos de Serviço" */
+.input-group.terms {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
     font-size: 0.9em;
 }
 
-.form-options .remember-me {
-    display: flex;
-    align-items: center;
+.input-group.terms input {
+    width: auto;
+    margin-right: 10px;
 }
 
-.form-options label {
-    margin-left: 5px;
-    color: #666;
-}
-
-.form-options a {
+.input-group.terms a {
     color: #F4B266;
+    font-weight: bold;
     text-decoration: none;
 }
 
-.form-options a:hover {
-    text-decoration: underline;
-}
-
-.login-button {
+.register-button {
     width: 100%;
     background-color: #5C4033;
     color: white;
@@ -105,32 +90,25 @@ main {
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
-.login-button:hover {
+.register-button:hover {
     background-color: #7a5f50;
 }
 
-.divider {
-    margin: 30px 0;
-    text-align: center;
-    color: #aaa;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-.signup-link {
-    margin-top: 20px;
+.login-link {
+    margin-top: 25px;
     font-size: 0.9em;
     color: #666;
 }
 
-.signup-link a {
+.login-link a {
     color: #F4B266;
     font-weight: bold;
     text-decoration: none;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     text-decoration: underline;
 }

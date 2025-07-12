@@ -1,0 +1,92 @@
+/* CSS MODIFICADO */
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    /* Garante que o título e a grade fiquem um em cima do outro */
+    align-items: center;
+    /* Centraliza os itens */
+    margin-bottom: 200px;
+}
+
+/* CSS NOVO PARA O TÍTULO */
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #5C4033;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    /* Espaço entre o título e os produtos */
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #5C4033;
+    font-family: sans-serif;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    height: 50px;
+    font-family: sans-serif;
+}
+
+.product-card .price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #E67E22;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.buy-button {
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #7a5f50;
+}
